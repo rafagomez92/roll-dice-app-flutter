@@ -1,3 +1,4 @@
+import 'package:first_app/pages/dice_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,10 +10,11 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return const MaterialApp(      
+      debugShowCheckedModeBanner: false,    
       home: Scaffold(
         body: Center(
-          child: Text('Hello World!'),
+          child: DicePage(),
         ),
       ),
     );
